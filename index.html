@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What's For Dinner</title>
+  <link rel="shortcut icon" href="IMGS/images.png" type="image/x-icon">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/all.min.css">
+</head>
+
+<body>
+
+  <div class="page-container">
+
+    <header class="topbar">
+
+      <div class="logo">
+        <span class="logo-icon">
+          <i class="fa-solid fa-utensils"></i>
+        </span>
+
+        <div>
+          <h1>What's For Dinner</h1>
+          <p>Your daily meal inspiration</p>
+        </div>
+      </div>
+
+      <div class="header-actions">
+
+        <button class="icon-btn" title="Saved recipes">
+          <i class="fa-solid fa-bookmark"></i>
+        </button>
+
+        <button class="icon-btn" title="History">
+          <i class="fa-solid fa-clock-rotate-left"></i>
+        </button>
+
+        <button class="icon-btn" title="Settings">
+          <i class="fa-solid fa-gear"></i>
+        </button>
+
+        <div class="avatar">
+          <img src="IMGS/avatar.jpg" alt="">
+        </div>
+
+      </div>
+
+      <button class="nav-toggle" id="navToggle" title="Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="mobile-menu" id="mobileMenu">
+
+        <button class="mobile-menu-item">
+          <span class="mobile-menu-icon">
+            <i class="fa-solid fa-bookmark"></i>
+          </span>
+          <span>Saved Recipes</span>
+        </button>
+
+        <button class="mobile-menu-item">
+          <span class="mobile-menu-icon">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+          </span>
+          <span>Recent</span>
+        </button>
+
+        <button class="mobile-menu-item">
+          <span class="mobile-menu-icon">
+            <i class="fa-solid fa-gear"></i>
+          </span>
+          <span>Settings</span>
+        </button>
+
+        <button class="mobile-menu-item">
+          <span class="mobile-menu-avatar">
+            <img src="IMGS/avatar.jpg" alt="">
+          </span>
+          <span>Profile</span>
+        </button>
+
+      </div>
+
+    </header>
+
+    <main class="card" id="recipeCard">
+
+      <section class="media">
+
+        <img id="recipeImage" src="" alt="">
+
+        <div class="rating-badge">
+
+          <span class="star">
+            <i class="fa-solid fa-star"></i>
+          </span>
+
+          <span id="recipeRating"></span>
+
+          <span id="recipeReviews" class="reviews"></span>
+
+        </div>
+
+        <div class="media-stats" id="statsRow">
+
+          <div class="stat">
+
+            <span class="stat-icon stat-icon-prep">
+              <i class="fa-solid fa-clock"></i>
+            </span>
+
+            <span class="stat-label">Prep Time</span>
+
+            <span class="stat-value" id="statPrep"></span>
+
+          </div>
+
+          <div class="stat">
+
+            <span class="stat-icon stat-icon-cook">
+              <i class="fa-solid fa-fire"></i>
+            </span>
+
+            <span class="stat-label">Cook Time</span>
+
+            <span class="stat-value" id="statCook"></span>
+
+          </div>
+
+          <div class="stat">
+
+            <span class="stat-icon stat-icon-servings">
+              <i class="fa-solid fa-users"></i>
+            </span>
+
+            <span class="stat-label">Servings</span>
+
+            <span class="stat-value" id="statServings"></span>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="details">
+
+        <div class="tags" id="recipeTags"></div>
+
+        <div class="title-row">
+
+          <h2 id="recipeName"></h2>
+
+          <div class="title-actions">
+
+            <button class="icon-btn" title="Save">
+              <i class="fa-solid fa-bookmark"></i>
+            </button>
+
+            <button class="icon-btn" title="Share">
+              <i class="fa-solid fa-share-nodes"></i>
+            </button>
+
+          </div>
+
+        </div>
+
+        <p class="subtitle" id="recipeDescription"></p>
+
+        <div class="warning" id="timeWarning" hidden>
+
+          <span class="warning-icon">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+          </span>
+
+          <div>
+            <strong>Extended Preparation Time</strong>
+
+            <p>
+              This recipe requires more than 45 minutes to prepare.
+              Plan accordingly!
+            </p>
+          </div>
+
+        </div>
+
+        <nav class="tabs">
+
+          <button class="tab-btn active" data-tab="ingredients">
+            <i class="fa-solid fa-list-check"></i>
+            Ingredients
+          </button>
+
+          <button class="tab-btn" data-tab="instructions">
+            <i class="fa-solid fa-book-open"></i>
+            Instructions
+          </button>
+
+          <button class="tab-btn" data-tab="nutrition">
+            <i class="fa-solid fa-chart-pie"></i>
+            Nutrition
+          </button>
+
+          <button class="tab-btn" data-tab="tips">
+            <i class="fa-solid fa-lightbulb"></i>
+            Chef's Tips
+          </button>
+
+        </nav>
+
+        <div class="tab-panel-wrapper">
+
+          <div class="tab-panel" id="panel-ingredients">
+
+            <div class="tab-panel-inner">
+
+              <ol id="ingredientsList" class="ingredients-list"></ol>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="tab-panel-wrapper">
+
+          <div class="tab-panel" id="panel-instructions" hidden>
+
+            <div class="tab-panel-inner">
+
+              <ol id="instructionsList" class="instructions-list"></ol>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="tab-panel-wrapper">
+
+          <div class="tab-panel" id="panel-nutrition" hidden>
+
+            <div class="tab-panel-inner">
+
+              <div id="nutritionGrid" class="nutrition-grid"></div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="tab-panel-wrapper">
+
+          <div class="tab-panel" id="panel-tips" hidden>
+
+            <div class="tab-panel-inner">
+
+              <ul id="tipsList" class="tips-list"></ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <button id="anotherRecipeBtn" class="another-btn">
+          <i class="fa-solid fa-arrows-rotate"></i>
+          Try Another Recipe
+        </button>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <script src="JS/main.js"></script>
+
+</body>
+
+</html>

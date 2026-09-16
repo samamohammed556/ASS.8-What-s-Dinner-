@@ -1,0 +1,1223 @@
+
+:root {
+    --primary: #ff6900;
+    --primary-dark: #c94e1e;
+    --primary-soft: #fff9ec;
+    --bg: #fefaf1;
+    --white: #fff;
+    --ink: #131b2e;
+    --ink-soft: #55596b;
+    --muted-dark: #3c4152;
+    --line: #f1e4d0;
+    --danger-bg: #fbeeec;
+    --red-soft: #f5dad6;
+    --red: #d3453a;
+    --red-deep: #b93a32;
+    --yellow-soft: #fbf2d6;
+    --yellow: #efc456;
+    --yellow-deep: #c2913a;
+    --green-soft: #e3f1e6;
+    --green: #2f7d4f;
+    --blue-soft: #dce6f7;
+    --blue: #3f72c9;
+    --blue-deep: #2f5aa8;
+    --pink-soft: #fce4ec;
+    --pink: #d6336c;
+    --radius-sm: 0.5rem;
+    --radius-md: 0.75rem;
+    --radius-lg: 1rem;
+    --radius-full: 1.75rem;
+    --shadow-sm: 0 4px 16px rgba(19, 27, 46, 0.1);
+    --shadow-md: 0 18px 42px rgba(19, 27, 46, 0.18);
+    --shadow-lg: 0 16px 30px rgba(19, 27, 46, 0.08);
+}
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.page-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.details,
+.tab-panel {
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-soft) transparent;
+}
+
+.details::-webkit-scrollbar,
+.tab-panel::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.details::-webkit-scrollbar-track,
+.tab-panel::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.details::-webkit-scrollbar-thumb,
+.tab-panel::-webkit-scrollbar-thumb {
+    background: var(--primary-soft);
+    border-radius: 999px;
+}
+
+.details::-webkit-scrollbar-thumb:hover,
+.tab-panel::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
+}
+
+.topbar {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 15px 40px;
+    background: var(--white);
+    border-bottom: 1px solid var(--line);
+    -webkit-box-shadow: var(--shadow-sm);
+            box-shadow: var(--shadow-sm);
+}
+
+.logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 14px;
+}
+
+.logo-icon {
+    width: 46px;
+    height: 46px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff520f, #fd4327);
+    color: var(--white);
+    font-size: 1.25rem;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+}
+
+.logo p {
+    margin: 2px 0 0;
+    color: var(--ink-soft);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.header-actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+}
+
+.icon-btn {
+    width: 40px;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+    color: var(--ink);
+    cursor: pointer;
+    font-size: 1.25rem;
+    -webkit-transition:background 0.15s ease,color 0.15s ease;
+    transition:background 0.15s ease,color 0.15s ease;
+}
+
+.icon-btn:hover {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.header-actions .icon-btn {
+    color: var(--ink-soft);
+}
+
+.header-actions .icon-btn:hover {
+    background: transparent;
+    color: var(--primary);
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden;
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.nav-toggle {
+    display: none;
+    width: 40px;
+    height: 40px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 0;
+    border-radius: var(--radius-sm);
+    background: var(--white);
+    color: var(--ink);
+    cursor: pointer;
+    font-size: 1.2rem;
+    -webkit-transition: color 0.15s ease;
+    transition: color 0.15s ease;
+}
+
+.nav-toggle:hover {
+    color: var(--primary);
+}
+
+.mobile-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px 24px;
+    background: var(--white);
+    border-top: 1px solid var(--line);
+    -webkit-box-shadow: var(--shadow-lg);
+            box-shadow: var(--shadow-lg);
+}
+
+.mobile-menu.open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.mobile-menu-item {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 14px;
+    padding: 14px 6px;
+    border: 0;
+    background: transparent;
+    color: var(--ink);
+    text-align: left;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.mobile-menu-item:hover {
+    color: var(--primary);
+}
+
+.mobile-menu-icon {
+    width: 24px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.mobile-menu-avatar {
+    width: 26px;
+    height: 26px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    overflow: hidden;
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+}
+
+.mobile-menu-avatar img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.card {
+    width: calc(100% - 48px);
+    height: 600px;
+    min-height: 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% 60%;
+    grid-template-columns: 40% 60%;
+    margin: 1.6875rem auto;
+    overflow: hidden;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-full);
+    -webkit-box-shadow: var(--shadow-md);
+            box-shadow: var(--shadow-md);
+}
+
+.media {
+    position: relative;
+    min-height: 0;
+}
+
+.media img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+
+.rating-badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 6px;
+    padding: 10px 14px;
+    background: var(--white);
+    border-radius: 999px;
+    -webkit-box-shadow: 0 4px 12px rgba(19, 27, 46, 0.12);
+            box-shadow: 0 4px 12px rgba(19, 27, 46, 0.12);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.rating-badge .star {
+    color: var(--yellow);
+}
+
+.rating-badge .reviews {
+    color: var(--ink-soft);
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.media-stats {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    gap: 10px;
+    padding: 18px 10px;
+    background: var(--white);
+    border-radius: var(--radius-md);
+    -webkit-box-shadow: 0 8px 24px rgba(19, 27, 46, 0.12);
+            box-shadow: 0 8px 24px rgba(19, 27, 46, 0.12);
+    text-align: center;
+}
+
+.stat {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 80px;
+            flex: 1 1 80px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 4px;
+    min-width: 70px;
+}
+
+.stat-icon {
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.stat-icon-prep {
+    color: var(--primary);
+}
+
+.stat-icon-cook {
+    color: #fb2c36;
+}
+
+.stat-icon-servings {
+    color: #2b7fff;
+}
+
+.stat-label {
+    color: var(--ink-soft);
+    font-size: 0.75rem;
+}
+
+.stat-value {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    min-height: 0;
+    padding: 1.5rem;
+    overflow-y: auto;
+}
+
+.tags {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.tags span {
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1rem;
+}
+
+.tag-difficulty {
+    background: var(--green-soft);
+    color: var(--green);
+}
+
+.tag-cuisine {
+    background: var(--blue-soft);
+    color: var(--blue);
+}
+
+.title-row {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 6px;
+}
+
+.title-actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 12px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+}
+
+.title-actions .icon-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-sm);
+    background: #fdf1d5;
+    color: var(--primary);
+    font-size: 0.95rem;
+}
+
+.title-actions .icon-btn:hover {
+    background: #ffd9a8;
+    color: var(--primary-dark);
+}
+
+#recipeName {
+    margin: 0;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin: 0 8px 24px 0;
+    color: var(--ink-soft);
+}
+
+.warning {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 12px;
+    margin: 16px 0;
+    padding: 14px 16px;
+    background: var(--danger-bg);
+    border-left: 4px solid var(--red);
+    border-radius: var(--radius-sm);
+    color: var(--red);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.warning[hidden] {
+    display: none;
+}
+
+.warning-icon {
+    margin-top: 2px;
+    color: var(--red);
+    font-size: 1.3rem;
+    line-height: 1;
+}
+
+.warning p {
+    margin: 4px 0 0;
+    color: var(--red-deep);
+    font-size: 0.9rem;
+    line-height: 1.35rem;
+}
+
+
+
+.tabs {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    gap: 6px 20px;
+    margin: 8px 0;
+    padding-bottom: 12px;
+}
+
+.tab-btn {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 8px;
+    padding: 10px 2px;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    background: transparent;
+    color: var(--ink-soft);
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.tab-btn:hover {
+    color: var(--muted-dark);
+}
+
+.tab-btn.active {
+    border-bottom-color: var(--primary);
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.tab-panel-wrapper {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+    margin: 0 16px;
+    padding: 16px 0 20px;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+
+.tab-panel-wrapper:has(.tab-panel[hidden]) {
+    display: none;
+}
+
+.tab-panel {
+    height: 320px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.tab-panel-inner {
+    border-radius: var(--radius-md);
+}
+
+#panel-ingredients .tab-panel-inner {
+    background: var(--primary-soft);
+}
+
+#ingredientsList {
+    padding: 24px;
+}
+
+.ingredients-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: item;
+}
+
+.ingredients-list li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 14px;
+    padding: 6px 0;
+    color: var(--ink-soft);
+}
+
+.ingredients-list li::before {
+    width: 27px;
+    height: 27px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    content: counter(item);
+    counter-increment: item;
+    border-radius: 50%;
+    background: var(--primary);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#panel-instructions .tab-panel-inner {
+    background: var(--white);
+}
+
+#instructionsList {
+    padding: 15px 20px;
+}
+
+.instructions-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: item;
+}
+
+.instructions-list li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+    padding: 14px 0;
+    color: var(--ink-soft);
+    font-size: 1rem;
+}
+
+.instructions-list li::before {
+    width: 48px;
+    height: 48px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    content: counter(item);
+    counter-increment: item;
+    border-radius: var(--radius-lg);
+    background: var(--primary);
+    color: var(--white);
+}
+
+#panel-nutrition .tab-panel-inner {
+    background: var(--white);
+}
+
+#nutritionGrid {
+    padding: 18px 20px;
+}
+
+.nutrition-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 12px 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.nutrition-grid .stat-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 12px;
+    padding: 16px 20px;
+    border-radius: var(--radius-sm);
+    background: #f9fafb;
+}
+
+.nutrition-grid .stat-icon {
+    width: 36px;
+    height: 36px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: var(--radius-sm);
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.nutri-icon-calories {
+    background: var(--primary-soft);
+    color: var(--primary-dark);
+}
+
+.nutri-icon-protein {
+    background: var(--blue-soft);
+    color: var(--blue);
+}
+
+.nutri-icon-protein:hover {
+    color: var(--blue-deep);
+}
+
+.nutri-icon-carbs {
+    background: var(--yellow-soft);
+    color: var(--yellow-deep);
+}
+
+.nutri-icon-fat {
+    background: var(--red-soft);
+    color: var(--red);
+}
+
+.nutri-icon-fiber {
+    background: var(--green-soft);
+    color: var(--green);
+}
+
+.nutri-icon-sodium {
+    background: var(--pink-soft);
+    color: var(--pink);
+}
+
+.nutrition-grid .stat-label {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    color: var(--ink);
+    font-size: 1rem;
+}
+
+.nutrition-grid .stat-value {
+    white-space: nowrap;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+#tipsList {
+    padding: 18px 20px;
+}
+
+.tips-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tips-list li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 12px;
+    padding: 20px 24px;
+    border-left: 4px solid var(--primary);
+    border-radius: var(--radius-sm);
+    background: #fffbeb;
+}
+
+.tip-icon {
+    width: 22px;
+    height: 22px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 50%;
+    background: var(--primary);
+    color: var(--white);
+    font-size: 0.7rem;
+}
+
+.another-btn {
+    -webkit-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+            order: 7;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px;
+    margin: 20px 16px 0;
+    padding: 16px 20px;
+    border: 0;
+    border-radius: var(--radius-md);
+    background: linear-gradient(135deg, #ff6600, #fb3233);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    -webkit-transition: background 0.2s ease, -webkit-transform 0.15s ease;
+    transition: background 0.2s ease, -webkit-transform 0.15s ease;
+    transition: background 0.2s ease, transform 0.15s ease;
+    transition: background 0.2s ease, transform 0.15s ease, -webkit-transform 0.15s ease;
+}
+
+.another-btn:hover {
+    background: linear-gradient(135deg, #e25c03, #de2e2e);
+    -webkit-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+            transform: scale(1.02);
+}
+
+@media (max-width: 1020px) {
+    .card {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .media {
+        height: 400px;
+    }
+
+    .details {
+        height: auto;
+        overflow-y: visible;
+        padding: 1.5rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .topbar {
+        padding: 12px 20px;
+    }
+
+    .logo {
+        gap: 10px;
+    }
+
+    .logo-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+    }
+
+    .logo h1 {
+        font-size: 1.05rem;
+        line-height: 1.4rem;
+    }
+
+    .logo p {
+        font-size: 0.7rem;
+        line-height: 1rem;
+    }
+
+    .header-actions {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .card {
+        width: calc(100% - 24px);
+        margin: 12px auto 56px;
+    }
+
+    .media {
+        height: 380px;
+    }
+
+    .rating-badge {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
+
+    .rating-badge .reviews {
+        font-size: 0.7rem;
+    }
+
+    .media-stats {
+        padding: 12px 8px;
+    }
+
+    .stat-icon {
+        font-size: 1.25rem;
+    }
+
+    .stat-label {
+        font-size: 0.7rem;
+    }
+
+    .stat-value {
+        font-size: 0.9rem;
+    }
+
+    .details {
+        padding: 1rem;
+    }
+
+    .title-row {
+        display: contents;
+    }
+
+    .title-actions {
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        gap: 12px;
+        margin-bottom: 12px;
+    }
+
+    .tags {
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .tags span {
+        padding: 3px 10px;
+        font-size: 0.7rem;
+    }
+
+    #recipeName {
+        -webkit-box-ordinal-group: 4;
+            -ms-flex-order: 3;
+                order: 3;
+        width: 100%;
+        margin: 0 0 4px;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+    }
+
+    .subtitle {
+        -webkit-box-ordinal-group: 5;
+            -ms-flex-order: 4;
+                order: 4;
+        font-size: 0.85rem;
+        line-height: 1.25rem;
+    }
+
+    .warning {
+        -webkit-box-ordinal-group: 6;
+            -ms-flex-order: 5;
+                order: 5;
+        gap: 10px;
+        padding: 12px;
+    }
+
+    .warning-icon {
+        font-size: 1.1rem;
+    }
+
+    .warning p {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+
+    .tabs {
+        -webkit-box-ordinal-group: 7;
+            -ms-flex-order: 6;
+                order: 6;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        gap: 4px 12px;
+    }
+
+    .tab-btn {
+        font-size: 0.85rem;
+    }
+
+    .tab-panel-wrapper {
+        -webkit-box-ordinal-group: 8;
+            -ms-flex-order: 7;
+                order: 7;
+        margin-inline: 8px;
+    }
+
+    .nutrition-grid {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .another-btn {
+        -webkit-box-ordinal-group: 9;
+            -ms-flex-order: 8;
+                order: 8;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
+        margin-right: auto;
+        padding: 8px 10px;
+        font-size: 0.78rem;
+        line-height: 1.1rem;
+        gap: 4px;
+    }
+}
+
+@media (max-width: 520px) {
+    .topbar {
+        padding: 12px 16px;
+    }
+
+    .logo {
+        gap: 8px;
+    }
+
+    .logo-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 0.9rem;
+    }
+
+    .logo h1 {
+        font-size: 0.95rem;
+        line-height: 1.25rem;
+    }
+
+    .logo p {
+        font-size: 0.65rem;
+        line-height: 0.9rem;
+    }
+
+    .card {
+        width: calc(100% - 16px);
+        margin-bottom: 56px;
+    }
+
+    .media {
+        height: 360px;
+    }
+
+    .media-stats {
+        right: 12px;
+        bottom: 12px;
+        left: 12px;
+        padding: 10px 8px;
+    }
+
+    .rating-badge {
+        top: 12px;
+        left: 12px;
+    }
+
+    .details {
+        padding: 0.75rem;
+    }
+
+    .title-actions {
+        gap: 8px;
+    }
+
+    #recipeName {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 0.8rem;
+        line-height: 1.15rem;
+    }
+
+    .tabs {
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 10px;
+    }
+
+    .tab-btn {
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    }
+
+    .tab-panel-wrapper {
+        margin-inline: 4px;
+    }
+
+    .instructions-list li {
+        gap: 14px;
+        padding: 10px 0;
+        font-size: 0.95rem;
+    }
+
+    .instructions-list li::before {
+        width: 52px;
+        height: 52px;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 52px;
+                flex: 0 0 52px;
+        border-radius: 0.8125rem;
+        font-size: 1.1rem;
+    }
+}
