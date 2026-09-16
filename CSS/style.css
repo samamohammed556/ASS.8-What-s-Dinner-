@@ -1291,6 +1291,7 @@ body {
         gap: 4px;
         font-size: 0.5rem;
         white-space: nowrap;
+        text-overflow: ellipsis;
     }
 
     .tab-btn.active {
