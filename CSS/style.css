@@ -1,4 +1,3 @@
-
 :root {
     --primary: #ff6900;
     --primary-dark: #c94e1e;
@@ -34,7 +33,7 @@
 
 * {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -85,16 +84,16 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     padding: 15px 40px;
     background: var(--white);
     border-bottom: 1px solid var(--line);
     -webkit-box-shadow: var(--shadow-sm);
-            box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow-sm);
 }
 
 .logo {
@@ -102,8 +101,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     gap: 14px;
 }
 
@@ -114,11 +113,11 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     border-radius: 50%;
     background: linear-gradient(135deg, #ff520f, #fd4327);
     color: var(--white);
@@ -144,8 +143,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     gap: 10px;
 }
 
@@ -156,19 +155,19 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     border: 0;
     border-radius: 50%;
     background: transparent;
     color: var(--ink);
     cursor: pointer;
     font-size: 1.25rem;
-    -webkit-transition:background 0.15s ease,color 0.15s ease;
-    transition:background 0.15s ease,color 0.15s ease;
+    -webkit-transition: background 0.15s ease, color 0.15s ease;
+    transition: background 0.15s ease, color 0.15s ease;
 }
 
 .icon-btn:hover {
@@ -192,11 +191,11 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     overflow: hidden;
     border: 2px solid var(--primary);
     border-radius: 50%;
@@ -208,7 +207,7 @@ body {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
 }
 
 .nav-toggle {
@@ -216,11 +215,11 @@ body {
     width: 40px;
     height: 40px;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     border: 0;
     border-radius: var(--radius-sm);
     background: var(--white);
@@ -244,13 +243,13 @@ body {
     display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     padding: 10px 24px;
     background: var(--white);
     border-top: 1px solid var(--line);
     -webkit-box-shadow: var(--shadow-lg);
-            box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-lg);
 }
 
 .mobile-menu.open {
@@ -265,8 +264,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     gap: 14px;
     padding: 14px 6px;
     border: 0;
@@ -284,7 +283,7 @@ body {
 .mobile-menu-icon {
     width: 24px;
     -ms-flex-negative: 0;
-        flex-shrink: 0;
+    flex-shrink: 0;
     text-align: center;
     font-size: 1.1rem;
 }
@@ -293,7 +292,7 @@ body {
     width: 26px;
     height: 26px;
     -ms-flex-negative: 0;
-        flex-shrink: 0;
+    flex-shrink: 0;
     overflow: hidden;
     border: 2px solid var(--primary);
     border-radius: 50%;
@@ -303,7 +302,7 @@ body {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
 }
 
 .card {
@@ -320,7 +319,7 @@ body {
     border: 1px solid var(--line);
     border-radius: var(--radius-full);
     -webkit-box-shadow: var(--shadow-md);
-            box-shadow: var(--shadow-md);
+    box-shadow: var(--shadow-md);
 }
 
 .media {
@@ -332,7 +331,7 @@ body {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
 }
 
 
@@ -344,14 +343,14 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     gap: 6px;
     padding: 10px 14px;
     background: var(--white);
     border-radius: 999px;
     -webkit-box-shadow: 0 4px 12px rgba(19, 27, 46, 0.12);
-            box-shadow: 0 4px 12px rgba(19, 27, 46, 0.12);
+    box-shadow: 0 4px 12px rgba(19, 27, 46, 0.12);
     font-size: 1rem;
     font-weight: 600;
 }
@@ -375,13 +374,13 @@ body {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     gap: 10px;
     padding: 18px 10px;
     background: var(--white);
     border-radius: var(--radius-md);
     -webkit-box-shadow: 0 8px 24px rgba(19, 27, 46, 0.12);
-            box-shadow: 0 8px 24px rgba(19, 27, 46, 0.12);
+    box-shadow: 0 8px 24px rgba(19, 27, 46, 0.12);
     text-align: center;
 }
 
@@ -390,12 +389,12 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 80px;
-            flex: 1 1 80px;
+    -ms-flex: 1 1 80px;
+    flex: 1 1 80px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     gap: 4px;
     min-width: 70px;
 }
@@ -433,8 +432,8 @@ body {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     height: 100%;
     min-height: 0;
     padding: 1.5rem;
@@ -443,8 +442,8 @@ body {
 
 .tags {
     -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    -ms-flex-order: 1;
+    order: 1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -472,17 +471,17 @@ body {
 
 .title-row {
     -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    -ms-flex-order: 2;
+    order: 2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     gap: 12px;
     margin-bottom: 6px;
 }
@@ -493,7 +492,7 @@ body {
     display: flex;
     gap: 12px;
     -ms-flex-negative: 0;
-        flex-shrink: 0;
+    flex-shrink: 0;
 }
 
 .title-actions .icon-btn {
@@ -519,16 +518,16 @@ body {
 
 .subtitle {
     -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
+    -ms-flex-order: 3;
+    order: 3;
     margin: 0 8px 24px 0;
     color: var(--ink-soft);
 }
 
 .warning {
     -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
+    -ms-flex-order: 4;
+    order: 4;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -540,8 +539,8 @@ body {
     border-radius: var(--radius-sm);
     color: var(--red);
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .warning[hidden] {
@@ -566,18 +565,18 @@ body {
 
 .tabs {
     -webkit-box-ordinal-group: 6;
-        -ms-flex-order: 5;
-            order: 5;
+    -ms-flex-order: 5;
+    order: 5;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     gap: 6px 20px;
     margin: 8px 0;
     padding-bottom: 12px;
@@ -588,11 +587,11 @@ body {
     display: -ms-inline-flexbox;
     display: inline-flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     gap: 8px;
     padding: 10px 2px;
     border: 0;
@@ -617,8 +616,8 @@ body {
 
 .tab-panel-wrapper {
     -webkit-box-ordinal-group: 7;
-        -ms-flex-order: 6;
-            order: 6;
+    -ms-flex-order: 6;
+    order: 6;
     margin: 0 16px;
     padding: 16px 0 20px;
     border-top: 1px solid var(--line);
@@ -659,8 +658,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     gap: 14px;
     padding: 6px 0;
     color: var(--ink-soft);
@@ -670,16 +669,16 @@ body {
     width: 27px;
     height: 27px;
     -ms-flex-negative: 0;
-        flex-shrink: 0;
+    flex-shrink: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     content: counter(item);
     counter-increment: item;
     border-radius: 50%;
@@ -709,8 +708,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     gap: 20px;
     padding: 14px 0;
     color: var(--ink-soft);
@@ -721,16 +720,16 @@ body {
     width: 48px;
     height: 48px;
     -ms-flex-negative: 0;
-        flex-shrink: 0;
+    flex-shrink: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     content: counter(item);
     counter-increment: item;
     border-radius: var(--radius-lg);
@@ -759,8 +758,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     gap: 12px;
     padding: 16px 20px;
     border-radius: var(--radius-sm);
@@ -771,16 +770,16 @@ body {
     width: 36px;
     height: 36px;
     -ms-flex-negative: 0;
-        flex-shrink: 0;
+    flex-shrink: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     border-radius: var(--radius-sm);
     font-size: 1rem;
     line-height: 1;
@@ -822,8 +821,8 @@ body {
 
 .nutrition-grid .stat-label {
     -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     color: var(--ink);
     font-size: 1rem;
 }
@@ -844,8 +843,8 @@ body {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     gap: 12px;
     margin: 0;
     padding: 0;
@@ -857,8 +856,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     gap: 12px;
     padding: 20px 24px;
     border-left: 4px solid var(--primary);
@@ -870,16 +869,16 @@ body {
     width: 22px;
     height: 22px;
     -ms-flex-negative: 0;
-        flex-shrink: 0;
+    flex-shrink: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     border-radius: 50%;
     background: var(--primary);
     color: var(--white);
@@ -888,19 +887,19 @@ body {
 
 .another-btn {
     -webkit-box-ordinal-group: 8;
-        -ms-flex-order: 7;
-            order: 7;
+    -ms-flex-order: 7;
+    order: 7;
     -ms-flex-item-align: start;
-        align-self: flex-start;
+    align-self: flex-start;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     gap: 10px;
     margin: 20px 16px 0;
     padding: 16px 20px;
@@ -920,8 +919,8 @@ body {
 .another-btn:hover {
     background: linear-gradient(135deg, #e25c03, #de2e2e);
     -webkit-transform: scale(1.02);
-        -ms-transform: scale(1.02);
-            transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
 }
 
 @media (max-width: 1020px) {
@@ -1022,23 +1021,23 @@ body {
 
     .title-actions {
         -webkit-box-ordinal-group: 2;
-            -ms-flex-order: 1;
-                order: 1;
+        -ms-flex-order: 1;
+        order: 1;
         width: 100%;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: end;
-            -ms-flex-pack: end;
-                justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
         gap: 12px;
         margin-bottom: 12px;
     }
 
     .tags {
         -webkit-box-ordinal-group: 3;
-            -ms-flex-order: 2;
-                order: 2;
+        -ms-flex-order: 2;
+        order: 2;
         width: 100%;
         margin-bottom: 8px;
     }
@@ -1050,8 +1049,8 @@ body {
 
     #recipeName {
         -webkit-box-ordinal-group: 4;
-            -ms-flex-order: 3;
-                order: 3;
+        -ms-flex-order: 3;
+        order: 3;
         width: 100%;
         margin: 0 0 4px;
         font-size: 1.4rem;
@@ -1060,16 +1059,16 @@ body {
 
     .subtitle {
         -webkit-box-ordinal-group: 5;
-            -ms-flex-order: 4;
-                order: 4;
+        -ms-flex-order: 4;
+        order: 4;
         font-size: 0.85rem;
         line-height: 1.25rem;
     }
 
     .warning {
         -webkit-box-ordinal-group: 6;
-            -ms-flex-order: 5;
-                order: 5;
+        -ms-flex-order: 5;
+        order: 5;
         gap: 10px;
         padding: 12px;
     }
@@ -1085,10 +1084,10 @@ body {
 
     .tabs {
         -webkit-box-ordinal-group: 7;
-            -ms-flex-order: 6;
-                order: 6;
+        -ms-flex-order: 6;
+        order: 6;
         -ms-flex-pack: distribute;
-            justify-content: space-around;
+        justify-content: space-around;
         gap: 4px 12px;
     }
 
@@ -1098,8 +1097,8 @@ body {
 
     .tab-panel-wrapper {
         -webkit-box-ordinal-group: 8;
-            -ms-flex-order: 7;
-                order: 7;
+        -ms-flex-order: 7;
+        order: 7;
         margin-inline: 8px;
     }
 
@@ -1110,11 +1109,11 @@ body {
 
     .another-btn {
         -webkit-box-ordinal-group: 9;
-            -ms-flex-order: 8;
-                order: 8;
+        -ms-flex-order: 8;
+        order: 8;
         -ms-flex-item-align: center;
-            -ms-grid-row-align: center;
-            align-self: center;
+        -ms-grid-row-align: center;
+        align-self: center;
         margin-right: auto;
         padding: 8px 10px;
         font-size: 0.78rem;
@@ -1130,11 +1129,13 @@ body {
 
     .logo {
         gap: 8px;
+        min-width: 0;
     }
 
     .logo-icon {
         width: 32px;
         height: 32px;
+        flex-shrink: 0;
         font-size: 0.9rem;
     }
 
@@ -1150,74 +1151,237 @@ body {
 
     .card {
         width: calc(100% - 16px);
-        margin-bottom: 56px;
+        margin: 10px auto 40px;
+        border-radius: 1.25rem;
     }
+
 
     .media {
-        height: 360px;
+        height: 390px;
     }
 
-    .media-stats {
-        right: 12px;
-        bottom: 12px;
-        left: 12px;
-        padding: 10px 8px;
+    .media img {
+        object-fit: cover;
     }
 
     .rating-badge {
         top: 12px;
         left: 12px;
+        padding: 7px 10px;
+        gap: 5px;
+        font-size: 0.8rem;
+    }
+
+    .rating-badge .reviews {
+        font-size: 0.68rem;
+    }
+
+    .media-stats {
+        right: 10px;
+        bottom: 10px;
+        left: 10px;
+        gap: 4px;
+        padding: 12px 6px;
+        border-radius: 1rem;
+    }
+
+    .stat {
+        min-width: 0;
+        gap: 4px;
+    }
+
+    .stat-icon {
+        font-size: 1.2rem;
+    }
+
+    .stat-label {
+        font-size: 0.68rem;
+        white-space: nowrap;
+    }
+
+    .stat-value {
+        font-size: 0.82rem;
+        white-space: nowrap;
     }
 
     .details {
-        padding: 0.75rem;
+        padding: 12px;
     }
 
+
     .title-actions {
+        width: 100%;
+        justify-content: flex-end;
         gap: 8px;
+        margin-bottom: 10px;
+    }
+
+    .title-actions .icon-btn {
+        width: 42px;
+        height: 42px;
+    }
+
+    .tags {
+        gap: 6px;
+        margin-bottom: 7px;
+    }
+
+    .tags span {
+        padding: 3px 9px;
+        font-size: 0.68rem;
     }
 
     #recipeName {
+        width: 100%;
+        margin-bottom: 5px;
         font-size: 1.25rem;
         line-height: 1.5rem;
     }
 
     .subtitle {
-        font-size: 0.8rem;
+        margin-right: 0;
+        margin-bottom: 16px;
+        font-size: 0.78rem;
         line-height: 1.15rem;
     }
 
+    .warning {
+        gap: 9px;
+        margin: 12px 0;
+        padding: 11px;
+    }
+
+    .warning-icon {
+        font-size: 1rem;
+    }
+
+    .warning p {
+        margin: 2px 0 0;
+        font-size: 0.75rem;
+        line-height: 1.1rem;
+    }
+
     .tabs {
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-        -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap;
+        width: 100%;
+        justify-content: space-around;
+        gap: 0;
+        margin: 6px 0;
+        padding-bottom: 8px;
         overflow-x: auto;
-        padding-bottom: 10px;
+        scrollbar-width: none;
+    }
+
+    .tabs::-webkit-scrollbar {
+        display: none;
     }
 
     .tab-btn {
-        -ms-flex-negative: 0;
-            flex-shrink: 0;
+        flex: 1 1 0;
+        min-width: 0;
+        padding: 8px 3px;
+        gap: 5px;
+        font-size: 0.78rem;
+        white-space: nowrap;
     }
 
     .tab-panel-wrapper {
-        margin-inline: 4px;
+        margin-inline: 2px;
+        padding: 12px 0 14px;
+    }
+
+    .tab-panel {
+        height: 300px;
+    }
+
+    #ingredientsList {
+        padding: 16px;
+    }
+
+    .ingredients-list li {
+        gap: 10px;
+        padding: 5px 0;
+        font-size: 0.82rem;
+    }
+
+    .ingredients-list li::before {
+        width: 24px;
+        height: 24px;
+        font-size: 0.8rem;
+    }
+
+    #instructionsList {
+        padding: 12px 14px;
     }
 
     .instructions-list li {
-        gap: 14px;
-        padding: 10px 0;
-        font-size: 0.95rem;
+        gap: 10px;
+        padding: 9px 0;
+        font-size: 0.82rem;
+        line-height: 1.2rem;
     }
 
     .instructions-list li::before {
-        width: 52px;
-        height: 52px;
-        -webkit-box-flex: 0;
-            -ms-flex: 0 0 52px;
-                flex: 0 0 52px;
-        border-radius: 0.8125rem;
-        font-size: 1.1rem;
+        width: 38px;
+        height: 38px;
+        flex: 0 0 38px;
+        border-radius: 0.65rem;
+        font-size: 0.9rem;
+    }
+
+    #nutritionGrid {
+        padding: 12px;
+    }
+
+    .nutrition-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .nutrition-grid .stat-box {
+        padding: 11px 12px;
+        gap: 9px;
+    }
+
+    .nutrition-grid .stat-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 0.85rem;
+    }
+
+    .nutrition-grid .stat-label {
+        font-size: 0.82rem;
+    }
+
+    .nutrition-grid .stat-value {
+        font-size: 0.85rem;
+    }
+
+    #tipsList {
+        padding: 12px;
+    }
+
+    .tips-list {
+        gap: 8px;
+    }
+
+    .tips-list li {
+        gap: 9px;
+        padding: 13px 14px;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+
+    .tip-icon {
+        width: 20px;
+        height: 20px;
+        font-size: 0.6rem;
+    }
+
+    .another-btn {
+        align-self: flex-start;
+        margin: 16px 0 0;
+        padding: 9px 12px;
+        font-size: 0.75rem;
+        line-height: 1rem;
     }
 }
